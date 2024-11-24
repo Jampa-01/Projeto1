@@ -1,0 +1,164 @@
+/* styles.css */
+                                 /* TAGS PARA AS TRÊS PÁGINAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%; /*ocupar toda a tela*/
+    display: flex;
+    flex-direction: column; /*alinhar heade, main e footer em coluna*/
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Para alinhar os itens horizontalmente */
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    /* display: inline; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 16px;
+    display: inline-block; /* Para garantir que o link tenha um tamanho adequado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* cresce o main pra ocupar o espaço sobrando de tela */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+
+                                     /* TAGS PARA APRESENTAÇÃO*/
+article{
+    
+}
+
+.integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.integrante {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+                                           /* TAGS PARA GALERIA*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+                                      /* TAGS PARA CADASTRO*/
+
+#formulario-contato{
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(119, 0, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+                                               /*sobras*/
+
+
+
+
