@@ -21,9 +21,9 @@ document.querySelector('form').addEventListener('submit', (event) => {
         event.preventDefault();
         alert('O nome precisa ter pelo menos 3 caracteres.');
     }
-});
+}); //fazer alerta no <p aviso>
 
-
+// muda cor dos links no header, alterar para apenas os <a>
 const nav = document.querySelector('nav');
 nav.addEventListener('mouseover', () => {
     nav.style.backgroundColor = 'rgba(0,0,0,0.8)';

@@ -1,30 +1,71 @@
 /* styles.css */
+                                 /* TAGS PARA AS TRÊS PÁGINAS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
+    height: 100%; /*ocupar toda a tela*/
+    display: flex;
+    flex-direction: column; /*alinhar heade, main e footer em coluna*/
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    display: flex; /* Para alinhar os itens horizontalmente */
+    justify-content: space-evenly;
 }
 
 nav ul li {
-    display: inline;
+    /* display: inline; */
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 16px;
+    display: inline-block; /* Para garantir que o link tenha um tamanho adequado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
 }
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* cresce o main pra ocupar o espaço sobrando de tela */
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+
+                                     /* TAGS PARA APRESENTAÇÃO*/
 .integrantes {
     display: flex;
     flex-wrap: wrap;
@@ -46,12 +87,8 @@ main {
     border-radius: 50%;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+
+                                           /* TAGS PARA GALERIA*/
 
 .galeria {
     display: flex;
@@ -66,6 +103,11 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -73,13 +115,16 @@ footer {
     border-radius: 8px;
 }
 
+
+                                      /* TAGS PARA CADASTRO*/
+
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(119, 0, 255);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,80 +149,5 @@ button:hover {
     background-color: #555;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    text-decoration: none;
-}
-
-body {
-   
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex; /* Para alinhar os itens horizontalmente */
-    justify-content: center;
-}
-
-nav ul li {
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block; /* Para garantir que o link tenha um tamanho adequado */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
-}
-
-
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 1;
-    width: 100%;
-}
+                                               /*sobras*/
 
