@@ -21,28 +21,23 @@ body {
 
 header {
     background-color: #333;
-    color: white;
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
-nav ul {
-    list-style-type: none;
+nav  {
     display: flex; /* Para alinhar os itens horizontalmente */
     justify-content: space-evenly;
-}
-
-nav ul li {
     /* display: inline; */
-    justify-content: center;
     align-items: center;
     margin-right: 20px;
 }
 
-nav ul li a {
+a {
     color: white;
-    padding: 16px;
-    display: inline-block; /* Para garantir que o link tenha um tamanho adequado */
+    padding: 20px;
+    border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
 }
 
@@ -66,6 +61,7 @@ footer {
 
 
                                      /* TAGS PARA APRESENTAÇÃO*/
+
 .integrantes {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +72,7 @@ footer {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
     width: 30%;
     text-align: center;
 }
@@ -101,7 +97,7 @@ footer {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -118,6 +114,7 @@ footer {
 
                                       /* TAGS PARA CADASTRO*/
 
+
 form {
     display: flex;
     flex-direction: column;
@@ -127,7 +124,7 @@ form {
     background-color: rgb(119, 0, 255);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.527);
 }
 
 input, textarea {
@@ -135,6 +132,11 @@ input, textarea {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+/* #aviso-nome, #aviso-email, #aviso-cpf, #aviso-data {
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+} */
 
 button {
     padding: 10px;
@@ -150,4 +152,7 @@ button:hover {
 }
 
                                                /*sobras*/
+
+
+
 
